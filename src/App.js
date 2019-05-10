@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Route, Switch } from "react-router-dom";
+import alertify from "alertifyjs";
+import { LoaderAlt } from "./components/shared";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Index = React.lazy(() => import("./containers/index/Index.container"));
+class App extends Component {
+  componentDidMount() {
+    //Load CSS ASSETS
+    Promise.all([
+      import("bootstrap/dist/css/bootstrap.min.css"),
+      import("jquery/dist/jquery.min"),
+      import("bootstrap/dist/js/bootstrap.min"),
+      import("@fortawesome/fontawesome-free/css/all.css"),
+      import("./alertify.css")
+    ]);
+  }
+
+  render() {
+    //CONFIG ALERTIFY SETTING
+    alertify.defaults.transition = "zoom";
+    alertify.defaults.theme.ok = "btn st-bg-green text-white";
+    alertify.defaults.theme.cancel = "btn btn-danger";
+    alertify.defaults.theme.input = "form-control";
+
+    return (
+      <React.Suspense fallback={<LoaderAlt />}>
+        <Switch>
+          <Route exact path="/" component={Index} />
+        </Switch>
+      </React.Suspense>
+    );
+  }
 }
 
 export default App;
