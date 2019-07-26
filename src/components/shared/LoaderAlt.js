@@ -8,6 +8,7 @@ export default class LoaderAlt extends React.Component {
       <main>
         <section className="loader-overlay" />
         <section className="shadow-sm loader-container">
+          {/* <img src="/img/giphy.gif" /> */}
           <div className="sk-cube-grid">
             <div className="sk-cube sk-cube1" />
             <div className="sk-cube sk-cube2" />

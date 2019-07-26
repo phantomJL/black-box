@@ -1,0 +1,30 @@
+
+
+.card1{
+  position: absolute;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.card1 {
+  min-width: 30ch;
+  min-height: 30ch;
+  width: 25vw;
+  height: 25vw;
+  max-width: 60ch;
+  max-height: 60ch;
+  background-image: url("/img/california_map.png");
+}
+
+
+
+.container {
+  width: 50ch;
+  height: 50ch;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}

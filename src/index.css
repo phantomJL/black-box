@@ -1,9 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,4 +9,88 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.ant-menu-light{
+  background-color: rgb(18,18,17) !important;
+  color:white !important;
+
+}
+.ant-layout-sider-children{
+  background-color: rgb(18,18,17) !important;
+
+}
+.ant-layout-sider-trigger{
+  background-color: rgb(18,18,17) !important;
+}
+
+.ant-menu-item > a:hover {
+  color: #F0F0F0 !important;
+}
+
+.ant-menu-submenu-title:hover {
+  color: #F0F0F0 !important;
+}
+.ant-menu-submenu-selected {
+  color: #F0F0F0 !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: black !important;
+}
+.ant-menu{
+  border:0px !important;
+  background-color:rgb(18,18,17) !important;
+  color: #F0F0F0 !important;
+
+}
+
+.ant-menu-item-selected {
+  color: #FFD700 !important;
+}
+.ant-menu-item-selected > a,
+.ant-menu-item-selected > a:hover {
+  color: #FFD700 !important;
+}
+
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover {
+  color: #FFD700 !important;
+}
+
+.ant-menu-item > a:hover {
+  color: #FFD700 !important;
+}
+.ant-menu-inline .ant-menu-item::after {
+
+  border-right: 3px solid #FFD700 !important;
+
+}
+.ant-menu-vertical .ant-menu-submenu-selected,
+.ant-menu-vertical-left .ant-menu-submenu-selected,
+.ant-menu-vertical-right .ant-menu-submenu-selected {
+  color: #FFD700 !important;
+}
+.ant-menu-vertical .ant-menu-submenu-selected > a,
+.ant-menu-vertical-left .ant-menu-submenu-selected > a,
+.ant-menu-vertical-right .ant-menu-submenu-selected > a {
+  color: #FFD700 !important;
+}
+
+/* .ant-dropdown-menu-dark{
+  background-color: 
+} */ 
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ant-layout{
+  background-color: white !important
 }

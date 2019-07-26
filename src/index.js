@@ -6,7 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
 import ScrollToTop from "react-router-scroll-top";
-import store from "./store";
+import store from "./redux/store";
 
 if (window.location.protocol !== "https:") {
   if (process.env.REACT_APP_APP_ENV === "prod") {
